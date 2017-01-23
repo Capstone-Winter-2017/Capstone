@@ -31,7 +31,6 @@ class CreateCharacersTable extends Migration
             $table->integer('charisma');
             $table->integer('playerID');
             $table->foreign('playerID')->references('id')->on('player');
-            $table->rememberToken();
             $table->timestamps();
         });
     }

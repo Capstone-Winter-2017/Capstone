@@ -17,6 +17,8 @@ class CreateCharacterItemsTable extends Migration
             $table->integer('character_id');
             $table->integer('item_id');
             $table->timestamps();
+            $table->foreign('character_id')->references('id')->on('characters');
+            $table->foreign('item_id')->references('id')->on('items');
         });
     }
 

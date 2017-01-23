@@ -17,6 +17,9 @@ class CreateCharacterSessionsTable extends Migration
             $table->integer('character_id');
             $table->integer('session_id');
             $table->timestamps();
+
+            $table->foreign('character_id')->references('id')->on('characters');
+            $table->foreign('session_id')->references('id')->on('sessions');
         });
     }
 

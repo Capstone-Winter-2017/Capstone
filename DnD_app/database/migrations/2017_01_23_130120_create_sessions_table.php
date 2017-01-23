@@ -20,6 +20,8 @@ class CreateSessionsTable extends Migration
             $table->string('summary');
             $table->integer('campaign_id');
             $table->timestamps();
+
+            $table->foreign('campaign_id')->references('id')->on('campaigns');
         });
     }
 

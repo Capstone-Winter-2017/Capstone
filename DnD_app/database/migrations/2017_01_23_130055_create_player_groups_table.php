@@ -17,6 +17,9 @@ class CreatePlayerGroupsTable extends Migration
             $table->integer('group_id');
             $table->integer('player_id');
             $table->timestamps();
+
+            $table->foreign('group_id')->references('id')->on('groups');
+            $table->foreign('player_id')->references('id')->on('players');
         });
     }
 
