@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCharacersTable extends Migration
+class CreateCharactersTable extends Migration
 {
     /**
      * Run the migrations.
