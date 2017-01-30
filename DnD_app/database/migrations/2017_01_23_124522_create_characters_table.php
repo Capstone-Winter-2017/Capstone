@@ -38,8 +38,6 @@ class CreateCharactersTable extends Migration
             $table->text('flaws');
             $table->text('features');
 
-
-
             $table->foreign('playerID')->references('id')->on('player');
             $table->timestamps();
         });
