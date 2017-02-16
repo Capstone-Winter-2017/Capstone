@@ -16,6 +16,15 @@
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
 
     <style>
+        figcaption{
+            text-align: center;
+        }
+        .menu{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 25px;
+        }
         body {
             font-family: 'Lato';
         }
@@ -46,7 +55,7 @@
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <figure>
-                        <img src="/image/castle.jpg" title = "Home" style="width:100px; height:100px; border-radius:50%; margin-right:25px;">
+                        <img class = "menu" src="/image/castle.jpg" title = "Home" >
                         <figcaption>Home</figcaption>
                         </figure>
                 </a>
@@ -55,17 +64,18 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
+                    <li></li>
                     <li>
                         <a href="{{ url('/member') }}">
                             <figure>
-                                <img src="/image/dragon.jpg" title = "Member Page" style="width:100px; height:100px; border-radius:50%; margin-right:25px;">
-                                <figcaption>Member's Area</figcaption>
+                                <img class = "menu" src="/image/dragon.jpg" title = "Member Page">
+                                <figcaption>Member's</figcaption>
                         </figure></a>
                     </li>
                     <li>
                     <a href="{{ url('/#') }}">
                         <figure>
-                            <img src="/image/character.jpg" title = "Character" style="width:100px; height:100px; border-radius:50%; margin-right:25px;">
+                            <img class = "menu" src="/image/character.jpg" title = "Character" >
                             <figcaption>Character</figcaption>
                     </figure>
                     </a>
