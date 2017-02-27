@@ -8,7 +8,7 @@
                 <div class="panel-heading">Welcome</div>
 
                 <div class="panel-body">
-                    Your Application's Landing Page.
+                    This Is the Dungeons and Dragons Character Manager
                 </div>
             </div>
         </div>
