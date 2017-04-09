@@ -12,10 +12,21 @@ class CampaignSeeder extends Seeder
     public function run()
     {
 
-        DB::table('groups')->insert([
-            'name' => '>Group 1',
-            'description' => 'First group, with players 1, 2, 3',
+        DB::table('campaigns')->insert([
+            'name' => 'Campaign 1',
+            'description' => 'First Campaign, with players 1, 2, 3, 4, 5',
         ]);
+
+        DB::table('campaigns')->insert([
+            'name' => 'Campaign 2',
+            'description' => 'Second Campaign, with players 1, 2, 3, 5',
+        ]);
+
+        DB::table('campaigns')->insert([
+            'name' => 'Campaign 3',
+            'description' => 'Third Campaign, with players 1 and 2',
+        ]);
+
 
     }
 }
