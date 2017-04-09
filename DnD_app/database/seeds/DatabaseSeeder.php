@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
             'password' => 'password'
         ]);
 
-        DB::table('characer')->insert([
+    /*    DB::table('characer')->insert([
             'campaign' => 'campaign000',
             'level' => '1',
             'race' => '1',
@@ -43,7 +43,7 @@ class DatabaseSeeder extends Seeder
             'bonds' => 'bonds000',
             'flaws' => 'flaws000',
             'features' => 'features000'
-        ]);
+        ]); */
 
 
     }
