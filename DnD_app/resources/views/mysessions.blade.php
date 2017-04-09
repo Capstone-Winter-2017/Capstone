@@ -2,4 +2,4 @@
 
 <?php $sub = 'Group' ?>
 
-@extends('layouts.basic_list_page')
+@extends('layouts.list')

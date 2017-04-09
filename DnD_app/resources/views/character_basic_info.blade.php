@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-<?php $sub = 'asda' ?>
-
 @section('content')
 
     <h1>Alignment Issues On This Page (cm)</h1>

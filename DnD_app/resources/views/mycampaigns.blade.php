@@ -2,4 +2,4 @@
 
 <?php $sub = 'Campaign' ?>
 
-@extends('layouts.basic_list_page')
+@extends('layouts.list')

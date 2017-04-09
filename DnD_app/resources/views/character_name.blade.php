@@ -14,11 +14,9 @@
                     <input type="text" class="form-control" id="character_name">
                 </div>
             </div>
-            <div class="form-group text-center">
-                <button type="button" class="btn btn-default">Cancel</button>
-                <button type="submit" class="btn btn-default">Submit</button>
-            </div>
         </form>
+
+        @include('layouts.back_continue_cancel')
 
     </div>
 @stop
