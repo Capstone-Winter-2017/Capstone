@@ -12,7 +12,7 @@ class CharacterSeeder extends Seeder
     public function run()
     {
 
-        DB::table('players')->insert([
+        DB::table('Characters')->insert([
             'campaign' => '1',
             'name' => 'Fight McFighter',
             'level' => '1',
@@ -28,7 +28,7 @@ class CharacterSeeder extends Seeder
             'intelligence' => '12',
             'wisdom' => '12',
             'charisma' => '12',
-            'playerID' => '1',
+            'user_id' => '1',
             'armor_class' => '15',
             'speed' => '30',
             'personality_traits' => 'loves dogs',
@@ -36,12 +36,11 @@ class CharacterSeeder extends Seeder
             'bonds' => 'filler!',
             'flaws' => 'more filler',
             'features' => 'not bugs',
-            'playerID' => '1',
 
 
         ]);
 
-        DB::table('players')->insert([
+        DB::table('Characters')->insert([
             'campaign' => '1',
             'name' => 'Rogue McStealer',
             'level' => '1',
@@ -57,7 +56,7 @@ class CharacterSeeder extends Seeder
             'intelligence' => '12',
             'wisdom' => '12',
             'charisma' => '12',
-            'playerID' => '1',
+            'user_id' => '2',
             'armor_class' => '15',
             'speed' => '30',
             'personality_traits' => 'loves dogs',
@@ -65,10 +64,9 @@ class CharacterSeeder extends Seeder
             'bonds' => 'filler!',
             'flaws' => 'more filler',
             'features' => 'not bugs',
-            'playerID' => '2',
         ]);
 
-        DB::table('players')->insert([
+        DB::table('Characters')->insert([
             'campaign' => '1',
             'name' => 'Monk McPuncher',
             'level' => '1',
@@ -84,7 +82,7 @@ class CharacterSeeder extends Seeder
             'intelligence' => '12',
             'wisdom' => '12',
             'charisma' => '12',
-            'playerID' => '1',
+            'user_id' =>'3',
             'armor_class' => '15',
             'speed' => '30',
             'personality_traits' => 'loves dogs',
@@ -92,11 +90,10 @@ class CharacterSeeder extends Seeder
             'bonds' => 'filler!',
             'flaws' => 'more filler',
             'features' => 'not bugs',
-            'playerID' => '3',
         ]);
 
 
-        DB::table('players')->insert([
+        DB::table('Characters')->insert([
             'campaign' => '1',
             'name' => 'Bard McSinger',
             'level' => '1',
@@ -112,7 +109,7 @@ class CharacterSeeder extends Seeder
             'intelligence' => '12',
             'wisdom' => '12',
             'charisma' => '12',
-            'playerID' => '1',
+            'user_id' => '4',
             'armor_class' => '15',
             'speed' => '30',
             'personality_traits' => 'loves dogs',
@@ -120,10 +117,10 @@ class CharacterSeeder extends Seeder
             'bonds' => 'filler!',
             'flaws' => 'more filler',
             'features' => 'not bugs',
-            'playerID' => '4',
+
         ]);
 
-        DB::table('players')->insert([
+        DB::table('Characters')->insert([
             'campaign' => '1',
             'name' => 'Bear McDruid',
             'level' => '1',
@@ -139,7 +136,7 @@ class CharacterSeeder extends Seeder
             'intelligence' => '12',
             'wisdom' => '12',
             'charisma' => '12',
-            'playerID' => '1',
+            'User_id' => '5',
             'armor_class' => '15',
             'speed' => '30',
             'personality_traits' => 'loves dogs',
@@ -147,10 +144,10 @@ class CharacterSeeder extends Seeder
             'bonds' => 'filler!',
             'flaws' => 'more filler',
             'features' => 'not bugs',
-            'playerID' => '5',
+
         ]);
 
-        DB::table('players')->insert([
+        DB::table('Characters')->insert([
             'campaign' => '1',
             'name' => 'Spells McWizard',
             'level' => '1',
@@ -166,7 +163,7 @@ class CharacterSeeder extends Seeder
             'intelligence' => '12',
             'wisdom' => '12',
             'charisma' => '12',
-            'playerID' => '1',
+            'user_ID' => '5',
             'armor_class' => '15',
             'speed' => '30',
             'personality_traits' => 'loves dogs',
@@ -174,10 +171,10 @@ class CharacterSeeder extends Seeder
             'bonds' => 'filler!',
             'flaws' => 'more filler',
             'features' => 'not bugs',
-            'playerID' => '1',
+
         ]);
 
-        DB::table('players')->insert([
+        DB::table('Characters')->insert([
             'campaign' => '1',
             'name' => 'Prayer McCleric',
             'level' => '1',
@@ -193,7 +190,7 @@ class CharacterSeeder extends Seeder
             'intelligence' => '12',
             'wisdom' => '12',
             'charisma' => '12',
-            'playerID' => '1',
+            'user_ID' => '1',
             'armor_class' => '15',
             'speed' => '30',
             'personality_traits' => 'loves dogs',
@@ -201,7 +198,6 @@ class CharacterSeeder extends Seeder
             'bonds' => 'filler!',
             'flaws' => 'more filler',
             'features' => 'not bugs',
-            'playerID' => '2',
         ]);
 /*      $table->integer('armor_class');
       $table->integer('speed');
