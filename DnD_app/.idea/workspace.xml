@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a387b118-f984-4b95-807b-d16d3577cd49" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database/migrations/2017_01_23_125831_create_players_table.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/migrations/2017_01_23_130055_create_player_groups_table.php" afterPath="$PROJECT_DIR$/database/migrations/2017_01_23_130055_create_user_groups_table.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/migrations/2017_01_23_133212_create_player_friends_table.php" afterPath="$PROJECT_DIR$/database/migrations/2017_01_23_133212_create_friends_table.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/database/seeds/PlayerSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/UserSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2017_01_23_124522_create_characters_table.php" afterPath="$PROJECT_DIR$/database/migrations/2017_01_23_124522_create_characters_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2017_01_23_130111_create_player_campaigns_table.php" afterPath="$PROJECT_DIR$/database/migrations/2017_01_23_130111_create_player_campaigns_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/CharacterSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/CharacterSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/FriendsSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/FriendsSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
+    <list default="true" id="a387b118-f984-4b95-807b-d16d3577cd49" name="Default" comment="seeders working">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <ignored path="DnD_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -515,17 +503,6 @@
     <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v4.4.5/bin/node" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v4.4.5/bin/node" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/image" />
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/resources/views/layouts" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public/image" />
-      <recent name="$PROJECT_DIR$/resources/views/layouts/Image" />
-    </key>
-  </component>
   <component name="RunManager" selected="PHPUnit.database">
     <configuration default="true" type="AppEnginePhpConfigurationType" factoryName="App Engine for PHP">
       <method />
@@ -617,7 +594,7 @@
       <workItem from="1485446244359" duration="1328000" />
       <workItem from="1486745187997" duration="73000" />
       <workItem from="1492093342376" duration="4098000" />
-      <workItem from="1492099324187" duration="3791000" />
+      <workItem from="1492099324187" duration="3954000" />
     </task>
     <task id="LOCAL-00001" summary="set up project">
       <created>1483974491676</created>
@@ -647,11 +624,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485381938470</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="seeders working">
+      <created>1492103158569</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1492103158569</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20610000" />
+    <option name="totallyTimeSpent" value="20773000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1366" height="706" extended-state="0" />
@@ -694,7 +678,8 @@
     <MESSAGE value="Created Authorization Scaffolding." />
     <MESSAGE value="added zip file for project" />
     <MESSAGE value="Did some modifications to the welcome screen. changed the route for the members area(will explain). we can get rid of that later if need be. added pictures for the top menu and som css." />
-    <option name="LAST_COMMIT_MESSAGE" value="Did some modifications to the welcome screen. changed the route for the members area(will explain). we can get rid of that later if need be. added pictures for the top menu and som css." />
+    <MESSAGE value="seeders working" />
+    <option name="LAST_COMMIT_MESSAGE" value="seeders working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -705,6 +690,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1044">
           <caret line="58" column="98" selection-start-line="58" selection-start-column="98" selection-end-line="58" selection-end-column="98" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -756,6 +742,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1044">
           <caret line="58" column="98" selection-start-line="58" selection-start-column="98" selection-end-line="58" selection-end-column="98" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -924,6 +911,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
           <caret line="58" column="98" selection-start-line="58" selection-start-column="98" selection-end-line="58" selection-end-column="98" />
+          <folding />
         </state>
       </provider>
     </entry>
