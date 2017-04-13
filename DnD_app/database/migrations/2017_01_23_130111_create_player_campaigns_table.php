@@ -14,11 +14,11 @@ class CreatePlayerCampaignsTable extends Migration
     {
         Schema::create('player_campaigns', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('player_id');
+            $table->integer('user_id');
             $table->integer('campaign_id');
             $table->timestamps();
 
-            $table->foreign('player_id')->references('id')->on('players');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('campaign_id')->references('id')->on('campaigns');
         });
     }

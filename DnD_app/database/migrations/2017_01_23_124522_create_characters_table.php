@@ -29,7 +29,7 @@ class CreateCharactersTable extends Migration
             $table->integer('intelligence');
             $table->integer('wisdom');
             $table->integer('charisma');
-            $table->integer('playerID');
+            $table->integer('user_id');
             $table->integer('armor_class');
             $table->integer('speed');
             $table->text('personality_traits');
@@ -38,7 +38,7 @@ class CreateCharactersTable extends Migration
             $table->text('flaws');
             $table->text('features');
 
-            $table->foreign('playerID')->references('id')->on('player');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

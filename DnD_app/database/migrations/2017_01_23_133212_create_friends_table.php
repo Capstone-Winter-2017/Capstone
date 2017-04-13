@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePlayerFriendsTable extends Migration
+class CreateFriendsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,14 +12,14 @@ class CreatePlayerFriendsTable extends Migration
      */
     public function up()
     {
-        Schema::create('player_friends', function (Blueprint $table) {
+        Schema::create('Friends', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('player_id');
+            $table->integer('user_id');
             $table->integer('friend_id');
             $table->timestamps();
 
-            $table->foreign('player_id')->references('id')->on('players');
-            $table->foreign('player_id')->references('id')->on('players');
+            $table->foreign('user_id')->references('id')->on('users');
+
         });
     }
 
