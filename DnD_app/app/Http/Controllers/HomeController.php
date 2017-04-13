@@ -62,6 +62,51 @@ class HomeController extends Controller
         return view('mymembers');
     }
 
+    public function ccname()
+    {
+        return view('createcharacter/name');
+    }
+
+    public function ccclass()
+    {
+        return view('createcharacter/selectclass');
+    }
+
+    public function ccrace()
+    {
+        return view('createcharacter/selectrace');
+    }
+
+    public function ccbasicinfo()
+    {
+        return view('createcharacter/basicinfo');
+    }
+
+    public function ccdetailedinfo()
+    {
+        return view('createcharacter/detailedinfo');
+    }
+
+    public function ccstats()
+    {
+        return view('createcharacter/');
+    }
+
+    public function ccreview()
+    {
+        return view('createcharacter/');
+    }
+//
+//    public function cc()
+//    {
+//        return view('createcharacter/');
+//    }
+//
+//    public function cc()
+//    {
+//        return view('createcharacter/');
+//    }
+
 //    public function my()
 //    {
 //        return view('my');

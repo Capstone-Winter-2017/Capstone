@@ -41,7 +41,7 @@ Route::get('/createcharacter/race', 'HomeController@ccrace');
 
 Route::get('/createcharacter/basicinfo', 'HomeController@ccbasicinfo');
 
-Route::get('/createcharacter/additionalinfo', 'HomeController@ccadditionalinfo');
+Route::get('/createcharacter/additionalinfo', 'HomeController@ccdetailedinfo');
 
 Route::get('/createcharacter/', 'HomeController@cc');
 
