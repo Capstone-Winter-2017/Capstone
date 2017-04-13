@@ -2,6 +2,9 @@
 
 @section('content')
 
+    <?php $lastpage = 'createcharacter/race'?>
+    <?php $nextpage = 'createcharacter/detailedinfo'?>
+
     <h1>Alignment Issues On This Page (cm)</h1>
 
     <div class="col-md-6 col-md-offset-3">
