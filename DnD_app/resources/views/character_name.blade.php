@@ -16,7 +16,15 @@
             </div>
         </form>
 
-        @include('layouts.back_continue_cancel')
+
+        <br>
+        <div class="row">
+            <div class="col-md-offset-9">
+                <button type="button" class="btn">Cancel</button>
+                <button type="button" class="btn">Continue</button>
+            </div>
+
+        </div>
 
     </div>
 @stop
