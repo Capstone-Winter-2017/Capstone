@@ -26,8 +26,6 @@ class CampaignSeeder extends Seeder
             'name' => 'Campaign 3',
             'description' => 'Third Campaign, with players 1 and 2',
         ]);
-
-
     }
 }
 /* Schema::create('campaigns', function (Blueprint $table) {

@@ -89,12 +89,12 @@ class HomeController extends Controller
 
     public function ccstats()
     {
-        return view('createcharacter/');
+        return view('createcharacter/stats');
     }
 
     public function ccreview()
     {
-        return view('createcharacter/');
+        return view('createcharacter/review');
     }
 //
 //    public function cc()

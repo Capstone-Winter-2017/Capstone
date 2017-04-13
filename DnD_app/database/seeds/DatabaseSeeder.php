@@ -11,14 +11,19 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        // TO RUN TO RUN TO RUN:
+        // IN TERMINAL:
+        // composer update
+        // composer dump-autoload
+
         // $this->call(UsersTableSeeder::class);
 
         // $this->call(UsersTableSeeder::class);
-        DB::table('users')->insert([
-            'name' => 'user000',
-            'email' => 'user000@test.com',
-            'password' => 'password'
-        ]);
+//        DB::table('users')->insert([
+//            'name' => 'user000',
+//            'email' => 'user000@test.com',
+//            'password' => 'password'
+//        ]);
 
     /*    DB::table('characer')->insert([
             'campaign' => 'campaign000',

@@ -41,11 +41,11 @@ Route::get('/createcharacter/race', 'HomeController@ccrace');
 
 Route::get('/createcharacter/basicinfo', 'HomeController@ccbasicinfo');
 
-Route::get('/createcharacter/additionalinfo', 'HomeController@ccdetailedinfo');
+Route::get('/createcharacter/detailedinfo', 'HomeController@ccdetailedinfo');
 
-Route::get('/createcharacter/', 'HomeController@cc');
+Route::get('/createcharacter/stats', 'HomeController@ccstats');
 
-Route::get('/createcharacter/', 'HomeController@cc');
+Route::get('/createcharacter/review', 'HomeController@ccreview');
 
 Route::get('/test', function () {
     return view ('test');
