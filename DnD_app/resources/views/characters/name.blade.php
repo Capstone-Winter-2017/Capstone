@@ -19,8 +19,25 @@
         <div class="row">
             <div class="col-md-offset-9">
                 <button type="button" class="btn">Cancel</button>
-                <button type="button" class="btn">Continue</button>
+
+                <input type="button" class="btn" onclick="location.href='characters/class';" value="Continue" />
             </div>
+
+            </div>
+
+        <form method="post" action="/characters">
+
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+            <div class="form-group">
+                <label>Name:</label>
+                <textarea name="name" class="form-control"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary form-control">Add Character</button>
+            </div>
+        </form>
         </div>
     </div>
 @stop

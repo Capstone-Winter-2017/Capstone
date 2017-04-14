@@ -9,12 +9,12 @@
         <h1>All Characters</h1>
     </div>
 
-    {{--@foreach ($characters as $character)--}}
-        {{--<div class="col-md-6 col-md-offset-3">--}}
-            {{--<a href="/characters/{{ $character->id }}">{{ $character->name }}</a>--}}
-        {{--</div>--}}
+    @foreach ($characters as $character)
+        <div class="col-md-6 col-md-offset-3">
+            <a href="/characters/{{ $character->id }}">{{ $character->name }}</a>
+        </div>
 
-    {{--@endforeach--}}
+    @endforeach
 
     <div class="col-md-6 col-md-offset-3">
         <hr>

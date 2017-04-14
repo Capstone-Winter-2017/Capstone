@@ -4,6 +4,6 @@
 
 <?php $sub = 'Class' ?>
 
-<?php $lastpage = 'mycampaigns' ?>
+<?php $lastpage = 'characters/name' ?>
 
 <?php $nextpage = 'characters/race' ?>
