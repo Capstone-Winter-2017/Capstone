@@ -2,8 +2,8 @@
 
 @section('content')
 
-<?php $lastpage = 'createcharacter/basicinfo'?>
-<?php $nextpage = 'createcharacter/stats'?>
+<?php $lastpage = 'characters/basicinfo'?>
+<?php $nextpage = 'characters/stats'?>
 
 <div class="col-md-6 col-md-offset-3">
     <div class="text-center"><h1>

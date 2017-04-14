@@ -64,47 +64,47 @@ class HomeController extends Controller
 
     public function ccname()
     {
-        return view('createcharacter/name');
+        return view('characters/name');
     }
 
     public function ccclass()
     {
-        return view('createcharacter/selectclass');
+        return view('characters/selectclass');
     }
 
     public function ccrace()
     {
-        return view('createcharacter/selectrace');
+        return view('characters/selectrace');
     }
 
     public function ccbasicinfo()
     {
-        return view('createcharacter/basicinfo');
+        return view('characters/basicinfo');
     }
 
     public function ccdetailedinfo()
     {
-        return view('createcharacter/detailedinfo');
+        return view('characters/detailedinfo');
     }
 
     public function ccstats()
     {
-        return view('createcharacter/stats');
+        return view('characters/stats');
     }
 
     public function ccreview()
     {
-        return view('createcharacter/review');
+        return view('characters/review');
     }
 //
 //    public function cc()
 //    {
-//        return view('createcharacter/');
+//        return view('characters/');
 //    }
 //
 //    public function cc()
 //    {
-//        return view('createcharacter/');
+//        return view('characters/');
 //    }
 
 //    public function my()

@@ -33,19 +33,21 @@ Route::get('/myfriends', 'HomeController@myfriends');
 
 Route::get('/mymembers', 'HomeController@mymembers');
 
-Route::get('/createcharacter/name', 'HomeController@ccname');
+Route::resource('characters', 'CharactersController');
 
-Route::get('/createcharacter/class', 'HomeController@ccclass');
-
-Route::get('/createcharacter/race', 'HomeController@ccrace');
-
-Route::get('/createcharacter/basicinfo', 'HomeController@ccbasicinfo');
-
-Route::get('/createcharacter/detailedinfo', 'HomeController@ccdetailedinfo');
-
-Route::get('/createcharacter/stats', 'HomeController@ccstats');
-
-Route::get('/createcharacter/review', 'HomeController@ccreview');
+//Route::get('/characters/name', 'HomeController@ccname');
+//
+//Route::get('/characters/class', 'HomeController@ccclass');
+//
+//Route::get('/characters/race', 'HomeController@ccrace');
+//
+//Route::get('/characters/basicinfo', 'HomeController@ccbasicinfo');
+//
+//Route::get('/characters/detailedinfo', 'HomeController@ccdetailedinfo');
+//
+//Route::get('/characters/stats', 'HomeController@ccstats');
+//
+//Route::get('/characters/review', 'HomeController@ccreview');
 
 Route::get('/test', function () {
     return view ('test');

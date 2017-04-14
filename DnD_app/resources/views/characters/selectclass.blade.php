@@ -6,4 +6,4 @@
 
 <?php $lastpage = 'mycampaigns' ?>
 
-<?php $nextpage = 'createcharacter/race' ?>
+<?php $nextpage = 'characters/race' ?>

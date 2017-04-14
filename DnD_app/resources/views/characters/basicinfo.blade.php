@@ -2,8 +2,8 @@
 
 @section('content')
 
-    <?php $lastpage = 'createcharacter/race'?>
-    <?php $nextpage = 'createcharacter/detailedinfo'?>
+    <?php $lastpage = 'characters/race'?>
+    <?php $nextpage = 'characters/detailedinfo'?>
 
     <h1>Alignment Issues On This Page (cm)</h1>
 
