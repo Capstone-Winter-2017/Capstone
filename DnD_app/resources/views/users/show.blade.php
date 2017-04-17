@@ -4,11 +4,21 @@
 
     <h1>{{ $user->name }}</h1>
 
+    {{--<ul>--}}
+    {{--@foreach ($user->characters as $character)--}}
+    {{--<li>{{ $character->name }}</li>--}}
+        {{--@endforeach--}}
+    {{--</ul>--}}
+
     <ul>
     @foreach ($user->characters as $character)
-    <li>{{ $character->name }}</li>
+        <div class="col-md-6 col-md-offset-3">
+            <li>
+                <a href="/characters/{{ $character->id }}">{{ $character->name }}</a>
+            </li>
+        </div>
         @endforeach
-    </ul>
+        </ul>
 
 @stop
 

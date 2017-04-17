@@ -126,7 +126,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label" for="name">constitution:</label>
+                    <label class="control-label" for="name">Constitution:</label>
                     <input class="form-control" name="constitution" placeholder="1">
                 </div>
 
