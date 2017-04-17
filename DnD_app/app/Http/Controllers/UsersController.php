@@ -37,17 +37,10 @@ class UsersController extends Controller
         $user = User::findOrFail($id);
 
         return view('users.show', compact('user'));
-//        return view('users.' . $page);
     }
 
-    public function getId()
-    {
-        return Auth::user()->id;
-    }
-
-    // pages contain contents
-    public function characters()
-    {
-        return $this->hasMany(Character::class);
-    }
+//    public function show(User $user)
+//    {
+//        return view('users.show', compact('user'));
+//    }
 }

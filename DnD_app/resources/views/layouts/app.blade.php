@@ -73,7 +73,7 @@
                         </figure></a>
                     </li>
                     <li>
-                    <a href="{{ url('/#') }}">
+                    <a href="{{ url('characters') }}">
                         <figure>
                             <img class = "menu" src="/image/character.jpg" title = "Character" >
                             <figcaption>Character</figcaption>
