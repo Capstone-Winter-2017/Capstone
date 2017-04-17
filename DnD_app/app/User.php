@@ -22,4 +22,10 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    // pages contain contents
+    public function characters()
+    {
+        return $this->hasMany(Character::class);
+    }
 }

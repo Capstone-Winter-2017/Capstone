@@ -35,6 +35,8 @@ Route::get('/mymembers', 'HomeController@mymembers');
 
 Route::resource('characters', 'CharactersController');
 
+Route::resource('users', 'UsersController');
+
 //Route::get('/characters/name', 'HomeController@ccname');
 //
 //Route::get('/characters/class', 'HomeController@ccclass');
