@@ -5,29 +5,31 @@
         <div class="col-md-6 col-md-offset-3">
             {{--<div> {{ var_dump($character) }} </div>--}}
 
-
             {{-- DISPLAY CHARACTER DETAILS --}}
-            {{--<div class="panel panel-default">--}}
-                {{--<div class="panel-heading">--}}
-                    {{--<label class="control-label" for="name">Character Details:</label>--}}
-                {{--</div>--}}
-                {{--<div class="panel-body">--}}
-                    {{--<div>--}}
-                        {{--<label>Name:</label>--}}
-                        {{--<label>{{ $character->name }}</label>--}}
-                    {{--</div>--}}
-                    {{--<div>--}}
-                        {{--<label>Class:</label>--}}
-                        {{--<label>{{ $character->class }}</label>--}}
-                    {{--</div>--}}
-                    {{--<div>--}}
-                        {{--<label>Race:</label>--}}
-                        {{--<label>{{ $character->race }}</label>--}}
-                    {{--</div>--}}
-
                     <h1>Character Details</h1>
 
-                    {{-- INPUT CHARACTER NAME --}}
+            <div class="row">
+
+            <form class="col-md-2" action="" method="post" onsubmit="return confirm('Are you sure you want to DELETE?')">
+                {{ method_field('DELETE') }}
+
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                <button type="submit" class="btn btn-danger">Delete</button>
+            </form>
+
+                {{--<i class="fa fa-pencil"></i>--}}
+
+            <div class="col-md-1">
+                <input type="button" class="btn" onclick="location.href='{{'/characters/' . $character->id . '/edit'}}'" value="Update" />
+            </div>
+
+            </div>
+
+            <br>
+
+
+            {{-- INPUT CHARACTER NAME --}}
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <label class="control-label" for="name">Name:</label>
@@ -178,18 +180,7 @@
                         </div>
                     </div>
 
-            {{--<form method="delete" route="characters/17/destroy" class="delete-form">--}}
-
-                <form action="" method="post" onsubmit="return confirm('Are you sure you want to submit?')">
-                    {{ method_field('DELETE') }}
-
-                <input type="hidden" name="_token" value="{{ csrf_token() }}">
-
-                <button type="submit" class="btn btn-danger"><i class="fa fa-pencil"></i> Delete</button>
-            </form>
-
                 </div>
             </div>
-        </div>
 
 @stop

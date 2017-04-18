@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 <?php $sub = 'Character' ?>
+<?php $model = 'characters' ?>
 
 @section('content')
     <div class="col-md-6 col-md-offset-3">
@@ -15,16 +16,16 @@
     @endforeach
 
     <div class="col-md-6 col-md-offset-3">
-        <hr>
+        @include('/layouts/modelbuttons')
     </div>
 
-    <div class="col-md-6 col-md-offset-3">
-        <form method="link" action="/characters/create">
+    {{--<div class="col-md-6 col-md-offset-3">--}}
+        {{--<form method="link" action="/characters/create">--}}
             {{--<input type="hidden" name="_token" value="{{ csrf_token() }}">--}}
 
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary form-control">Add Character </button>
-            </div>
-        </form>
-    </div>
+            {{--<div class="form-group">--}}
+                {{--<button type="submit" class="btn btn-primary form-control">Add Character </button>--}}
+            {{--</div>--}}
+        {{--</form>--}}
+    {{--</div>--}}
 @stop

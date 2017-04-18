@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePlayerCampaignsTable extends Migration
+class CreateUserCampaignsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class CreatePlayerCampaignsTable extends Migration
      */
     public function up()
     {
-        Schema::create('player_campaigns', function (Blueprint $table) {
+        Schema::create('user_campaigns', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id');
             $table->integer('campaign_id');
