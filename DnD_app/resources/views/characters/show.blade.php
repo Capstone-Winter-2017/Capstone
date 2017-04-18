@@ -178,10 +178,18 @@
                         </div>
                     </div>
 
+            {{--<form method="delete" route="characters/17/destroy" class="delete-form">--}}
+
+                <form action="" method="post" onsubmit="return confirm('Are you sure you want to submit?')">
+                    {{ method_field('DELETE') }}
+
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+                <button type="submit" class="btn btn-danger"><i class="fa fa-pencil"></i> Delete</button>
+            </form>
+
                 </div>
             </div>
-
-
         </div>
 
 @stop

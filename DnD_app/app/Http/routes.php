@@ -19,37 +19,15 @@ Route::auth();
 
 Route::get('/member', 'HomeController@index');
 
-Route::get('/myaccount', 'HomeController@myaccount');
-
-Route::get('/mycharacters', 'HomeController@mycharacters');
-
-Route::get('/mycampaigns', 'HomeController@mycampaigns');
-
-Route::get('/mysessions', 'HomeController@mysessions');
-
-Route::get('/mygroups', 'HomeController@mygroups');
-
-Route::get('/myfriends', 'HomeController@myfriends');
-
-Route::get('/mymembers', 'HomeController@mymembers');
-
 Route::resource('characters', 'CharactersController');
 
 Route::resource('users', 'UsersController');
 
-//Route::get('/characters/name', 'HomeController@ccname');
-//
-//Route::get('/characters/class', 'HomeController@ccclass');
-//
-//Route::get('/characters/race', 'HomeController@ccrace');
-//
-//Route::get('/characters/basicinfo', 'HomeController@ccbasicinfo');
-//
-//Route::get('/characters/detailedinfo', 'HomeController@ccdetailedinfo');
-//
-//Route::get('/characters/stats', 'HomeController@ccstats');
-//
-//Route::get('/characters/review', 'HomeController@ccreview');
+Route::resource('campaigns', 'CampaignsController');
+
+Route::resource('groups', 'GroupsController');
+
+Route::resource('sessions', 'SessionsController');
 
 Route::get('/test', function () {
     return view ('test');

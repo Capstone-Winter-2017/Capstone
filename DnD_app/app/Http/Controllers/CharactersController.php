@@ -101,7 +101,7 @@ class CharactersController extends Controller
 //        $character->description = Request::get('description');
 //        $character->save();
 
-        $character = Character::find($id);
+        $character = Character::findOrFail($id);
 
         $character->update($request->all());
 
@@ -116,20 +116,10 @@ class CharactersController extends Controller
      */
     public function destroy($id)
     {
-        //
-    }
+        $character = Character::findOrFail($id);
 
-//    BEGIN CHARACTER CREATION ROUTING INFO
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function name()
-    {
-//        $character = Character::findOrFail($id);
+        $character->delete();
 
-        return view('characters.name', compact('character'));
+        return redirect('/characters/');
     }
 }

@@ -1,16 +1,16 @@
 @extends('layouts.app')
 
-<?php $sub = 'Character' ?>
+<?php $sub = 'Group' ?>
 
 @section('content')
     <div class="col-md-6 col-md-offset-3">
-        <h1>All Characters</h1>
+        <h1>All Groups</h1>
     </div>
 
-    @foreach ($characters as $character)
+    @foreach ($groups as $group)
         <div class="col-md-6 col-md-offset-3">
 
-            <a href="/characters/{{ $character->id }}">{{ $character->name }}</a>
+            <a href="/groups/{{ $group->id }}">{{ $group->name }}</a>
             </div>
     @endforeach
 
@@ -19,11 +19,11 @@
     </div>
 
     <div class="col-md-6 col-md-offset-3">
-        <form method="link" action="/characters/create">
+        <form method="link" action="/groups/create">
             {{--<input type="hidden" name="_token" value="{{ csrf_token() }}">--}}
 
             <div class="form-group">
-                <button type="submit" class="btn btn-primary form-control">Add Character </button>
+                <button type="submit" class="btn btn-primary form-control">Add Group </button>
             </div>
         </form>
     </div>

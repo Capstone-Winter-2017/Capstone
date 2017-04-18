@@ -33,4 +33,15 @@ class Character extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function campaign()
+    {
+        return $this->belongsTo(Campaign::class);
+    }
+
+    public function sessions()
+    {
+        return $this->belongsToMany(Session::class);
+    }
+
 }

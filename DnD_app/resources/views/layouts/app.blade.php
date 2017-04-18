@@ -73,7 +73,10 @@
                         </figure></a>
                     </li>
                     <li>
-                    <a href="{{ url('characters') }}">
+
+                        {{--{{ Auth::user()->name }}--}}
+
+                    <a href="/users/{{ Auth::user()->id }}">
                         <figure>
                             <img class = "menu" src="/image/character.jpg" title = "Character" >
                             <figcaption>Character</figcaption>
