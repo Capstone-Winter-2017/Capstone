@@ -6,6 +6,7 @@
             {{--<div> {{ var_dump($group) }} </div>--}}
 
                     <h1>Group Details</h1>
+            <hr>
 
                     {{-- DISPLAY CHARACTER NAME --}}
                     <div class="panel panel-default">

@@ -6,6 +6,7 @@
             {{--<div> {{ var_dump($session) }} </div>--}}
 
                     <h1>Session Details</h1>
+            <hr>
 
                     {{-- DISPLAY CHARACTER NAME --}}
                     <div class="panel panel-default">

@@ -13,6 +13,7 @@
             <input type="hidden" name="user_id" value="<?php echo(Auth::user()->id) ?>">
 
             <h1>Create Group</h1>
+        <hr>
 
             {{-- INPUT CHARACTER NAME --}}
         <div class="panel panel-default">

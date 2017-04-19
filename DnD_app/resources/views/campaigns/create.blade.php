@@ -2,8 +2,7 @@
 
 @section('content')
 
-    <?php $lastpage = 'characters/basicinfo'?>
-    <?php $nextpage = 'characters/stats'?>
+    <?php $sub = 'Campaign'; $model = 'campaign' ?>
 
     <form class="form col-md-6 col-md-offset-3"
           method="post" action="/campaigns">
@@ -12,9 +11,10 @@
 
         <input type="hidden" name="user_id" value="<?php echo(Auth::user()->id) ?>">
 
-        <h1>Create Character</h1>
+        <h1>Create {{$sub}}</h1>
+        <hr>
 
-        {{-- INPUT CHARACTER NAME --}}
+        {{-- INPUT NAME --}}
         <div class="panel panel-default">
             <div class="panel-heading">
                 <label class="control-label" for="name">Name:</label>
@@ -35,7 +35,7 @@
 
         {{-- SUBMIT FORM TO CREATE CHARACTER --}}
         <div class="form-group">
-            <button type="submit" class="btn btn-primary form-control">Add Character</button>
+            <button type="submit" class="btn btn-primary form-control">Add {{$sub}}</button>
         </div>
     </form>
 

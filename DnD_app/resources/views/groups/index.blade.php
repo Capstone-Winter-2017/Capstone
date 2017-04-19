@@ -5,14 +5,22 @@
 @section('content')
     <div class="col-md-6 col-md-offset-3">
         <h1>All Groups</h1>
+        <hr>
     </div>
 
-    @foreach ($groups as $group)
-        <div class="col-md-6 col-md-offset-3">
+    <div class="col-md-6 col-md-offset-3">
 
-            <a href="/groups/{{ $group->id }}">{{ $group->name }}</a>
-            </div>
-    @endforeach
+        @foreach (App\UserGroup::all() as $usergroup)
+            @if ($usergroup->user_id == Auth::user()->id)
+                <div>
+                    <a href="/groups/{{ $usergroup->group_id }}">{{
+                        App\Group::findOrFail($usergroup->group_id)->name
+                        }}
+                </div>
+                </a>
+            @endif
+        @endforeach
+    </div>
 
     <div class="col-md-6 col-md-offset-3">
         <hr>

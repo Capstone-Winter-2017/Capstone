@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+<?php $sub = 'Character'; $model = 'characters' ?>
+
 @section('content')
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
@@ -7,27 +9,14 @@
 
             {{-- DISPLAY CHARACTER DETAILS --}}
                     <h1>Character Details</h1>
+            <hr>
 
-            <div class="row">
-
-            <form class="col-md-2" action="" method="post" onsubmit="return confirm('Are you sure you want to DELETE?')">
-                {{ method_field('DELETE') }}
-
-                <input type="hidden" name="_token" value="{{ csrf_token() }}">
-
-                <button type="submit" class="btn btn-danger">Delete</button>
-            </form>
+            @include('layouts.deletebutton')
+            <hr>
+            @include('layouts.updatebutton')
+            <hr>
 
                 {{--<i class="fa fa-pencil"></i>--}}
-
-            <div class="col-md-1">
-                <input type="button" class="btn" onclick="location.href='{{'/characters/' . $character->id . '/edit'}}'" value="Update" />
-            </div>
-
-            </div>
-
-            <br>
-
 
             {{-- INPUT CHARACTER NAME --}}
                     <div class="panel panel-default">

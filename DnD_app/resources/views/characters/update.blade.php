@@ -4,6 +4,7 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <h1>Update {{ $character->name }}</h1>
+            <hr>
 
             <form method="post" action="/characters/{{ $character->id }}">
     {{ method_field('patch') }}

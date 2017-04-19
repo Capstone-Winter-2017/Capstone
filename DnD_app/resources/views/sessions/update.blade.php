@@ -4,6 +4,7 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <h1>Update {{ $session->name }}</h1>
+            <hr>
 
             <form method="post" action="/sessions/{{ $session->id }}">
     {{ method_field('patch') }}
