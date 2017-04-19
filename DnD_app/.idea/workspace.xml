@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a387b118-f984-4b95-807b-d16d3577cd49" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserCampaignsController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserCharactersController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserGroupsController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserSessionsController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/UserCampaign.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/UserCharacter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/UserGroup.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/UserSession.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2017_04_19_020742_create_user_characters_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/database/migrations/2017_04_19_020955_create_user_sessions_table.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/layouts/updatebutton.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Campaign.php" afterPath="$PROJECT_DIR$/app/Campaign.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/CampaignsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/CampaignsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2017_01_23_130107_create_campaigns_table.php" afterPath="$PROJECT_DIR$/database/migrations/2017_01_23_130107_create_campaigns_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/campaigns/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/campaigns/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/campaigns/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/campaigns/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/campaigns/update.blade.php" afterPath="$PROJECT_DIR$/resources/views/campaigns/update.blade.php" />
     </list>
     <ignored path="DnD_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,7 +63,7 @@
       <file leaf-file-name="app.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
+            <state relative-caret-position="986">
               <caret line="50" column="16" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="93" />
               <folding />
             </state>
@@ -743,7 +748,7 @@
       <workItem from="1492535676296" duration="3995000" />
       <workItem from="1492540205103" duration="1749000" />
       <workItem from="1492546077442" duration="1006000" />
-      <workItem from="1492563864345" duration="10276000" />
+      <workItem from="1492563864345" duration="10369000" />
     </task>
     <task id="LOCAL-00001" summary="set up project">
       <created>1483974491676</created>
@@ -801,11 +806,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492570739216</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Just pushing most recent updates.&#10;&#10;Count of errors to ignore:  4">
+      <created>1492574249027</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1492574249027</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37799000" />
+    <option name="totallyTimeSpent" value="37892000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="28" width="1282" height="963" extended-state="6" />
@@ -854,7 +866,9 @@
     <MESSAGE value="Indices now populate only those objects related to the current user.&#10;&#10;Count of errors to ignore:  2" />
     <MESSAGE value="Fixing layouts and checking routing.&#10;&#10;Count of errors to ignore:  2" />
     <MESSAGE value="Fixing layouts and checking routing.&#10;&#10;Count of errors to ignore:  4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing layouts and checking routing.&#10;&#10;Count of errors to ignore:  4" />
+    <MESSAGE value="Just pushing most recent updates.&#10;&#10;Count of errors to ignore:  2" />
+    <MESSAGE value="Just pushing most recent updates.&#10;&#10;Count of errors to ignore:  4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Just pushing most recent updates.&#10;&#10;Count of errors to ignore:  4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1277,7 +1291,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
+        <state relative-caret-position="986">
           <caret line="50" column="16" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="93" />
           <folding />
         </state>
