@@ -61,6 +61,8 @@
         <div class="form-group">
             <button type="submit" class="btn btn-primary form-control">Add Session</button>
         </div>
+
+        @include('layouts.back')
     </form>
 
 @stop

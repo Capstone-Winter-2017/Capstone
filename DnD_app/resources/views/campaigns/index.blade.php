@@ -43,11 +43,13 @@
                 @endif
                 @endforeach
 
+                @include('layouts.newbutton')
+
+                @include('layouts.back')
+
         </div>
 
     {{--@endforeach--}}
-
-    @include('layouts.newbutton')
 
     {{--<div class="col-md-6 col-md-offset-3">--}}
         {{--<form method="link" action="/campaigns/create">--}}

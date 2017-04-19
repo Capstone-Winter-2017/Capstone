@@ -30,6 +30,8 @@
         <div class="form-group">
             <button type="submit" class="btn btn-primary form-control">Add {{$sub}}</button>
         </div>
+
+        @include('layouts.back')
     </form>
 
 @stop

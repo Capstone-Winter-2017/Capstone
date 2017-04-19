@@ -39,8 +39,8 @@
                     </div>
                 @endif
             @endforeach
+        @include('layouts.newbutton')
+
+        @include('layouts.back')
     </div>
-
-    @include('layouts.newbutton')
-
 @stop

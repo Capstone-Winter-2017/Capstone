@@ -7,6 +7,7 @@
     <div class="col-md-6 col-md-offset-3">
 
     <h1>{{ $user->name }}</h1>
+        <hr>
 
         @include('layouts.deletebutton')
         <hr>
@@ -27,6 +28,8 @@
                     </div>
             </div>
         @endforeach
+
+                @include('layouts.back')
 
     </div>
 

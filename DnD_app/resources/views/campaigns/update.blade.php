@@ -4,7 +4,6 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <h1>Update {{ $campaign->name }}</h1>
-            <hr>
 
             <form method="post" action="/campaigns/{{ $campaign->id }}">
     {{ method_field('patch') }}
@@ -38,5 +37,4 @@
             </form>
         </div>
     </div>
-
 @stop

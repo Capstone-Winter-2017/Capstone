@@ -26,17 +26,20 @@
             @endif
         @endforeach
 
-    <div class="col-md-6 col-md-offset-3">
         <hr>
-    </div>
 
-    <div class="col-md-6 col-md-offset-3">
+
+    <div>
         <form method="link" action="/friends/create">
             {{--<input type="hidden" name="_token" value="{{ csrf_token() }}">--}}
 
             <div class="form-friend">
                 <button type="submit" class="btn btn-primary form-control">Add Friend </button>
             </div>
+
+            @include('layouts.back')
         </form>
+
+
     </div>
 @stop

@@ -61,7 +61,7 @@
                     <a href="/users/{{ $session->created_by }}">{{
                         App\User::findOrFail($session->created_by)->name
                         }}
-                </div>
+
                 </a>
 
                     @foreach (App\UserSession::all() as $usersession)
@@ -71,8 +71,14 @@
                         App\User::findOrFail($usersession->user_id)->name
                         }}
                             </div>
-                            </a>
-    @endif
-    @endforeach
+                        </a>
+                    @endif
+                @endforeach
+
+            </div>
+        </div>
+
+
+    @include('layouts.back')
 
 @stop

@@ -27,16 +27,22 @@
                     <a href="/characters/{{ $character->id }}">{{
                         App\Character::findOrFail($character->id)->name
                         }}
+                    </div>
                 </div>
                 </a>
             @endif
         @endforeach
+
+
+
+                    @include('layouts.newbutton')
+
+                    @include('layouts.back')
     </div>
+
 
     {{--<div class="col-md-6 col-md-offset-3">--}}
         {{--@include('/layouts/modelbuttons')--}}
     {{--</div>--}}
-
-    @include('layouts.newbutton')
 
 @stop

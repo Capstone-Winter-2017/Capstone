@@ -13,7 +13,11 @@
 
             @include('layouts.deletebutton')
             <hr>
-            @include('layouts.updatebutton')
+
+            <div>
+            <input type="button" class="btn btn-primary form-control" onclick="location.href='{{'/characters/' . $character->id . '/edit'}}'" value="Update" />
+            </div>
+
             <hr>
 
                 {{--<i class="fa fa-pencil"></i>--}}
@@ -168,6 +172,8 @@
                             {{ $character->features }}
                         </div>
                     </div>
+
+            @include('layouts.back')
 
                 </div>
             </div>

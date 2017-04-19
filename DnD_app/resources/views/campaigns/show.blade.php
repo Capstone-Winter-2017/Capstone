@@ -61,5 +61,10 @@
                     </a>
     @endif
     @endforeach
+                    </div>
+                </div>
+
+    @include('layouts.back')
+
 
 @stop

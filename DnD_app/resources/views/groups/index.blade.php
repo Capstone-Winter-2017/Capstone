@@ -41,8 +41,10 @@
                         </div>
                 @endif
             @endforeach
-    </div>
 
-    @include('layouts.newbutton')
+            @include('layouts.newbutton')
+
+            @include('layouts.back')
+    </div>
 
 @stop
