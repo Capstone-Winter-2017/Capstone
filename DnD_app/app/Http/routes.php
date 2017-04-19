@@ -31,6 +31,12 @@ Route::resource('sessions', 'SessionsController');
 
 Route::resource('usercampaigns', 'UserCampaignsController');
 
+Route::resource('usercharacters', 'UserCharactersController');
+
+Route::resource('usergroups', 'UserGroupsController');
+
+Route::resource('usersessions', 'UserSessionsController');
+
 Route::get('/test', function () {
     return view ('test');
 });

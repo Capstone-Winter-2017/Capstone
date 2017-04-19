@@ -7,19 +7,23 @@
         <h1>All Campaigns</h1>
     </div>
 
-    @foreach ($campaigns as $campaign)
+    {{--@foreach ($campaigns as $campaign)--}}
         <div class="col-md-6 col-md-offset-3">
 
             @foreach (App\UserCampaign::all() as $usercampaign)
-
-                @if ($usercampaign->user_id == Auth::user()->id)
-                    <a href="/campaigns/{{ $campaign->id }}">{{ $campaign->name }}</a>
+                    @if ($usercampaign->user_id == Auth::user()->id)
+                        <div>
+                    <a href="/campaigns/{{ $usercampaign->campaign_id }}">{{
+                        App\Campaign::findOrFail($usercampaign->campaign_id)->name
+                        }}
+                        </div>
+                    </a>
                 @endif
             @endforeach
         </div>
 
 
-    @endforeach
+    {{--@endforeach--}}
 
     <div class="col-md-6 col-md-offset-3">
         <hr>
