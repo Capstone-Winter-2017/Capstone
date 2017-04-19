@@ -13,10 +13,15 @@
 
             @foreach (App\UserCampaign::all() as $usercampaign)
                     @if ($usercampaign->user_id == Auth::user()->id)
-                        <div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Campaign ID: {{$usercampaign->campaign_id}}
+                        </div>
+                        <div class="panel-body">
                     <a href="/campaigns/{{ $usercampaign->campaign_id }}">{{
                         App\Campaign::findOrFail($usercampaign->campaign_id)->name
                         }}
+                        </div>
                         </div>
                     </a>
                 @endif
@@ -24,10 +29,16 @@
 
             @foreach (App\Campaign::all() as $campaign)
                 @if ($campaign->created_by == Auth::user()->id)
-                <div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Campaign ID: {{$campaign->id}}
+                        </div>
+                        <div class="panel-body">
                     <a href="/campaigns/{{ $campaign->id }}">{{
                         App\Campaign::findOrFail($campaign->id)->name
                         }}
+                            </a>
+                            </div>
                 </div>
                 @endif
                 @endforeach

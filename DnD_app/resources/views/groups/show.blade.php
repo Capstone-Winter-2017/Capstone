@@ -39,4 +39,26 @@
                         </div>
                     </div>
 
+            {{-- DISPLAY MEMBERS --}}
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <label>Group Members:</label>
+                </div>
+                <div class="panel-body">
+                    {{-- INCLUDE CREATOR --}}
+                    <a href="/users/{{ $group->created_by }}">{{
+                        App\User::findOrFail($group->created_by)->name
+                        }}
+
+                    @foreach (App\UserGroup::all() as $usergroup)
+                        @if ($usergroup->group_id == $group->id)
+                            <div>
+                                <a href="/users/{{ $usergroup->user_id }}">{{
+                        App\User::findOrFail($usergroup->user_id)->name
+                        }}
+                            </div>
+                            </a>
+    @endif
+    @endforeach
+
 @stop

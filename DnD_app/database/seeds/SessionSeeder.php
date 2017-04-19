@@ -18,7 +18,8 @@ class SessionSeeder extends Seeder
             'dateTime' => '01/01/17',
             'description' => 'First session, First campaign',
             'summary' => 'All Players',
-            'campaign_id' => '1'
+            'campaign_id' => '1',
+            'created_by' => '1'
 
         ]);
 
@@ -27,7 +28,8 @@ class SessionSeeder extends Seeder
             'dateTime' => '02/01/17',
             'description' => 'Second session, First campaign',
             'summary' => 'All Players except 3',
-            'campaign_id' => '1'
+            'campaign_id' => '1',
+            'created_by' => '2'
 
         ]);
 
@@ -36,7 +38,8 @@ class SessionSeeder extends Seeder
             'dateTime' => '03/01/17',
             'description' => 'Third session, First campaign',
             'summary' => 'Only Players 2, 3, 4',
-            'campaign_id' => '1'
+            'campaign_id' => '1',
+            'created_by' => '3'
         ]);
 
         //second campaign
@@ -45,7 +48,8 @@ class SessionSeeder extends Seeder
             'dateTime' => '02/02/17',
             'description' => 'First session, Second campaign',
             'summary' => 'All Players',
-            'campaign_id' => '2'
+            'campaign_id' => '2',
+            'created_by' => '1'
         ]);
 
         DB::table('sessions')->insert([
@@ -53,7 +57,8 @@ class SessionSeeder extends Seeder
             'dateTime' => '03/02/17',
             'description' => 'Second session, Second campaign',
             'summary' => 'All Players but 1',
-            'campaign_id' => '2'
+            'campaign_id' => '2',
+            'created_by' => '2'
         ]);
 
         DB::table('sessions')->insert([
@@ -61,7 +66,8 @@ class SessionSeeder extends Seeder
             'dateTime' => '04/02/17',
             'description' => 'Third session, Second campaign',
             'summary' => 'Players 1 and 3',
-            'campaign_id' => '2'
+            'campaign_id' => '2',
+            'created_by' => '3'
         ]);
 
 

@@ -38,4 +38,28 @@
                                 {{ $campaign->description }}
                         </div>
                     </div>
+
+            {{-- DISPLAY MEMBERS --}}
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <label>Campaign Members:</label>
+                </div>
+                <div class="panel-body">
+                    {{-- INCLUDE CREATOR --}}
+                    <a href="/users/{{ $campaign->created_by }}">{{
+                        App\User::findOrFail($campaign->created_by)->name
+                        }}
+                </a>
+
+            @foreach (App\UserCampaign::all() as $usercampaign)
+                @if ($usercampaign->campaign_id == $campaign->id)
+                            <div>
+                        <a href="/users/{{ $usercampaign->user_id }}">{{
+                        App\User::findOrFail($usercampaign->user_id)->name
+                        }}
+                            </div>
+                    </a>
+    @endif
+    @endforeach
+
 @stop

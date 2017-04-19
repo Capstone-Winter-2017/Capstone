@@ -12,12 +12,7 @@ class UserSessionsSeeder extends Seeder
     public function run()
     {
 //        SESSION ONE
-        DB::table('user_sessions')->insert([
-            'user_id' => '1',
-            'session_id' => '1'
-        ]);
-
-        DB::table('user_sessions')->insert([
+            DB::table('user_sessions')->insert([
             'user_id' => '2',
             'session_id' => '1'
         ]);
@@ -40,11 +35,6 @@ class UserSessionsSeeder extends Seeder
 //        SESSION TWO
         DB::table('user_sessions')->insert([
             'user_id' => '1',
-            'session_id' => '2'
-        ]);
-
-        DB::table('user_sessions')->insert([
-            'user_id' => '2',
             'session_id' => '2'
         ]);
 

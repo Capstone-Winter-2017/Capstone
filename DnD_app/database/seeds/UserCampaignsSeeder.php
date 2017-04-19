@@ -18,11 +18,6 @@ class UserCampaignsSeeder extends Seeder
         ]);
 
         DB::table('user_campaigns')->insert([
-            'user_id' => '2',
-            'campaign_id' => '1'
-        ]);
-
-        DB::table('user_campaigns')->insert([
             'user_id' => '3',
             'campaign_id' => '1'
         ]);
@@ -38,10 +33,6 @@ class UserCampaignsSeeder extends Seeder
         ]);
 
 //        CAMPAIGN TWO
-        DB::table('user_campaigns')->insert([
-            'user_id' => '1',
-            'campaign_id' => '2'
-        ]);
 
         DB::table('user_campaigns')->insert([
             'user_id' => '2',

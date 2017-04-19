@@ -19,7 +19,11 @@
 
         @foreach (App\Character::all() as $character)
             @if ($character->user_id == Auth::user()->id)
-                <div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Character ID: {{$character->id}}
+                    </div>
+                    <div class="panel-body">
                     <a href="/characters/{{ $character->id }}">{{
                         App\Character::findOrFail($character->id)->name
                         }}

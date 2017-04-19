@@ -12,15 +12,19 @@
 
         @foreach (App\Friend::all() as $friend)
             @if ($friend->user_id == Auth::user()->id)
-                <div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            User ID: {{$friend->friend_id}}
+                        </div>
+                        <div class="panel-body">
                     <a href="/users/{{ $friend->friend_id }}">{{
                         App\User::findOrFail($friend->friend_id)->name
                         }}
                 </div>
+                        </div>
                 </a>
             @endif
         @endforeach
-    </div>
 
     <div class="col-md-6 col-md-offset-3">
         <hr>

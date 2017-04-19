@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Session extends Model
 {
-    protected $fillable = ['name', 'campaign_id', 'description',
+    protected $fillable = ['name', 'campaign_id', 'datetime', 'description',
     'created_by', 'updated_by'];
 
     // pages contain contents

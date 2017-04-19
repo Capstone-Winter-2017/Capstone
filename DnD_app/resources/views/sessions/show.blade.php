@@ -17,7 +17,7 @@
             </div>
             <hr>
 
-                    {{-- DISPLAY CHARACTER NAME --}}
+                    {{-- DISPLAY NAME --}}
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <label class="control-label" for="name">Name:</label>
@@ -27,7 +27,7 @@
                         </div>
                     </div>
 
-                    {{-- DISPLAY CHARACTER DESCRIPTION --}}
+                    {{-- DISPLAY DESCRIPTION --}}
                     <div class="panel panel-default">
                         <div class="panel-heading">
                                 <label>Description:</label>
@@ -37,5 +37,42 @@
                                 {{ $session->description }}
                         </div>
                     </div>
+
+            {{-- DISPLAY DATETIME --}}
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <label>Date and Time:</label>
+                </div>
+
+                <div class="panel-body">
+                    {{ $session->datetime }}
+                </div>
+            </div>
+
+
+            {{-- DISPLAY MEMBERS --}}
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <label>Session Members:</label>
+                </div>
+                <div class="panel-body">
+
+                    {{-- INCLUDE CREATOR --}}
+                    <a href="/users/{{ $session->created_by }}">{{
+                        App\User::findOrFail($session->created_by)->name
+                        }}
+                </div>
+                </a>
+
+                    @foreach (App\UserSession::all() as $usersession)
+                        @if ($usersession->session_id == $session->id)
+                            <div>
+                                <a href="/users/{{ $usersession->user_id }}">{{
+                        App\User::findOrFail($usersession->user_id)->name
+                        }}
+                            </div>
+                            </a>
+    @endif
+    @endforeach
 
 @stop

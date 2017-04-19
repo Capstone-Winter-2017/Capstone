@@ -26,10 +26,20 @@
                 {{-- DESCRIPTION --}}
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <label class="control-label" for="name">Description:</label>
+                        <label class="control-label" for="description">Description:</label>
                     </div>
                     <div class="panel-body">
-                        {{ $session->description }}
+                        <input class="form-control" name="description" value="{{$session->description}}">
+                    </div>
+                </div>
+
+                {{-- DATETIME --}}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <label class="control-label" for="datetime">Datetime:</label>
+                    </div>
+                    <div class="panel-body">
+                        <input class="form-control" name="datetime" value="{{$session->datetime}}">
                     </div>
                 </div>
 

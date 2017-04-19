@@ -24,10 +24,10 @@
                 {{-- DESCRIPTION --}}
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <label class="control-label" for="name">Description:</label>
+                        <label class="control-label" for="description">Description:</label>
                     </div>
                     <div class="panel-body">
-                        {{ $group->description }}
+                        <input class="form-control" name="description" value="{{$group->description}}">
                     </div>
                 </div>
 

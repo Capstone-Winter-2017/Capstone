@@ -15,11 +15,13 @@ class GroupSeeder extends Seeder
         DB::table('groups')->insert([
             'name' => 'Group 1',
             'description' => 'First group, with players 1, 2, 3, 4, 5',
+            'created_by' => '2'
         ]);
 
         DB::table('groups')->insert([
             'name' => 'Group 2',
             'description' => 'Second group, with players 1, 2, 3, 4, 5',
+            'created_by' => '2'
         ]);
 
     }

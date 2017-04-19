@@ -33,7 +33,17 @@
                 <label class="control-label" for="campaign_id">Campaign:</label>
             </div>
             <div class="panel-body">
-                <input class="form-control" name="campaign_id" placeholder="Enter name">
+                <input class="form-control" name="campaign_id" placeholder="Enter ID">
+            </div>
+        </div>
+
+        {{-- DATETIME --}}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <label class="control-label" for="datetime">Datetime:</label>
+            </div>
+            <div class="panel-body">
+                <input class="form-control" name="datetime" placeholder="Enter datetime">
             </div>
         </div>
 
