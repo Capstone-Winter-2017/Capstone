@@ -11,6 +11,8 @@
 
         <input type="hidden" name="user_id" value="<?php echo(Auth::user()->id) ?>">
 
+        <input type="hidden" name="created_by" value="<?php echo(Auth::user()->id) ?>">
+
         <h1>Create {{$sub}}</h1>
         <hr>
 

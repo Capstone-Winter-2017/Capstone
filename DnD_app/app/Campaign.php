@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Campaign extends Model
 {
-    protected $fillable = ['campaign_id', 'name', 'description'];
+    protected $fillable = ['name', 'description', 'created_by', 'updated_by'];
 
     public function created_by()
     {
@@ -17,5 +17,4 @@ class Campaign extends Model
     {
         return $this->belongsTo(User::class);
     }
-
 }

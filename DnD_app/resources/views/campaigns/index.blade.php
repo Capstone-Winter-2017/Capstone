@@ -21,6 +21,18 @@
                     </a>
                 @endif
             @endforeach
+
+
+            @foreach (App\Campaign::all() as $campaign)
+                @if ($campaign->created_by == Auth::user()->id)
+                <div>
+                    <a href="/campaigns/{{ $campaign->id }}">{{
+                        App\Campaign::findOrFail($campaign->id)->name
+                        }}
+                </div>
+                @endif
+                @endforeach
+
         </div>
 
 
