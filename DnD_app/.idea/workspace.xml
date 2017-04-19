@@ -1,31 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a387b118-f984-4b95-807b-d16d3577cd49" name="Default" comment="Cleaning up interface.&#10;&#10;Count of errors to ignore:  11">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/layouts/back.blade.php" />
+    <list default="true" id="a387b118-f984-4b95-807b-d16d3577cd49" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/campaigns/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/campaigns/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/campaigns/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/campaigns/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/campaigns/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/campaigns/show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/campaigns/update.blade.php" afterPath="$PROJECT_DIR$/resources/views/campaigns/update.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/characters/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/characters/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/characters/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/characters/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/characters/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/characters/show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/characters/update.blade.php" afterPath="$PROJECT_DIR$/resources/views/characters/update.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/friends/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/friends/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/friends/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/friends/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/groups/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/groups/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/groups/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/groups/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/groups/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/groups/show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/groups/update.blade.php" afterPath="$PROJECT_DIR$/resources/views/groups/update.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/newbutton.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/newbutton.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/updatebutton.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/updatebutton.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/sessions/create.blade.php" afterPath="$PROJECT_DIR$/resources/views/sessions/create.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/sessions/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/sessions/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/sessions/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/sessions/show.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/sessions/update.blade.php" afterPath="$PROJECT_DIR$/resources/views/sessions/update.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/users/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/users/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/users/show.blade.php" afterPath="$PROJECT_DIR$/resources/views/users/show.blade.php" />
     </list>
     <ignored path="DnD_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -673,7 +650,7 @@
       <workItem from="1492563864345" duration="11555000" />
       <workItem from="1492590146422" duration="8173000" />
       <workItem from="1492603496592" duration="221000" />
-      <workItem from="1492604044063" duration="2315000" />
+      <workItem from="1492604044063" duration="2343000" />
     </task>
     <task id="LOCAL-00001" summary="set up project">
       <created>1483974491676</created>
@@ -759,15 +736,22 @@
       <option name="project" value="LOCAL" />
       <updated>1492594229322</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Expected final submission.&#10;&#10;Count of errors to ignore:  11">
+      <created>1492606376076</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1492606376076</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49787000" />
+    <option name="totallyTimeSpent" value="49815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1440" height="838" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31096682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -817,7 +801,8 @@
     <MESSAGE value="Campaigns, sessions mostly working.&#10;&#10;Count of errors to ignore:  6" />
     <MESSAGE value="Cleaning up interface.&#10;&#10;Count of errors to ignore:  6" />
     <MESSAGE value="Cleaning up interface.&#10;&#10;Count of errors to ignore:  11" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaning up interface.&#10;&#10;Count of errors to ignore:  11" />
+    <MESSAGE value="Expected final submission.&#10;&#10;Count of errors to ignore:  11" />
+    <option name="LAST_COMMIT_MESSAGE" value="Expected final submission.&#10;&#10;Count of errors to ignore:  11" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
