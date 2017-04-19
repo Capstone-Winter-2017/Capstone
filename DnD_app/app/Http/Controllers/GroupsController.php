@@ -42,6 +42,23 @@ class GroupsController extends Controller
         return view('groups.create', compact('groups'));
     }
 
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+//        $group = new Group($request->all());
+
+        $group = new Group;
+
+        $group->create($request->all());
+
+        return redirect('groups');
+    }
+
     public function show($id)
     {
         $group = Group::findOrFail($id);

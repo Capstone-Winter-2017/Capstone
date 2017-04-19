@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="col-md-6 col-md-offset-3">
-        <h1>All Campaigns</h1>
+        <h1>Campaigns</h1>
         <hr>
     </div>
 

@@ -11,6 +11,8 @@
 
                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
+                <input type="hidden" name="updated_by" value="<?php echo(Auth::user()->id) ?>">
+
                 {{-- INPUT CAMPAIGN NAME --}}
                 <div class="panel panel-default">
                     <div class="panel-heading">

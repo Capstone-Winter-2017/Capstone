@@ -41,6 +41,23 @@ class SessionsController extends Controller
         return view('sessions.create', compact('sessions'));
     }
 
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+//        $session = new Session($request->all());
+
+        $session = new Session;
+
+        $session->create($request->all());
+
+        return redirect('sessions');
+    }
+
     public function show($id)
     {
         $session = Session::findOrFail($id);

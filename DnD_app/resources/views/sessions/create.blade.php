@@ -12,6 +12,8 @@
 
             <input type="hidden" name="user_id" value="<?php echo(Auth::user()->id) ?>">
 
+        <input type="hidden" name="created_by" value="<?php echo(Auth::user()->id) ?>">
+
             <h1>Create Session</h1>
         <hr>
 
@@ -25,13 +27,23 @@
             </div>
         </div>
 
+        {{-- CAMPAIGN --}}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <label class="control-label" for="campaign_id">Campaign:</label>
+            </div>
+            <div class="panel-body">
+                <input class="form-control" name="campaign_id" placeholder="Enter name">
+            </div>
+        </div>
+
         {{-- FEATURES --}}
         <div class="panel panel-default">
             <div class="panel-heading">
-                <label class="control-label" for="name">Features:</label>
+                <label class="control-label" for="description">Description:</label>
             </div>
             <div class="panel-body">
-                <textarea class="form-control" rows="4" name="features"></textarea>
+                <textarea class="form-control" rows="4" name="description"></textarea>
             </div>
         </div>
 

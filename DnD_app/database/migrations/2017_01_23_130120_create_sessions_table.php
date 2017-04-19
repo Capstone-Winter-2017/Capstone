@@ -15,13 +15,17 @@ class CreateSessionsTable extends Migration
         Schema::create('sessions', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->dateTime('datetime');
+            $table->dateTime('datetime')->nullable();
             $table->string('description');
-            $table->string('summary');
+            $table->string('summary')->nullable();
             $table->integer('campaign_id');
+            $table->integer('created_by')->nullable();
+            $table->integer('updated_by')->nullable();
             $table->timestamps();
 
             $table->foreign('campaign_id')->references('id')->on('campaigns');
+            $table->foreign('created_by')->references('id')->on('users');
+            $table->foreign('updated_by')->references('id')->on('users');
         });
     }
 
