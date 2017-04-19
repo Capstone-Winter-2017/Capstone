@@ -10,7 +10,7 @@
 
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-            <input type="hidden" name="user_id" value="<?php echo(Auth::user()->id) ?>">
+            {{--<input type="hidden" name="user_id" value="<?php echo(Auth::user()->id) ?>">--}}
 
             <h1>Create Campaign</h1>
 

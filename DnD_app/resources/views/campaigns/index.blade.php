@@ -10,8 +10,15 @@
     @foreach ($campaigns as $campaign)
         <div class="col-md-6 col-md-offset-3">
 
-            <a href="/campaigns/{{ $campaign->id }}">{{ $campaign->name }}</a>
-            </div>
+            @foreach (App\UserCampaign::all() as $usercampaign)
+
+                @if ($usercampaign->user_id == Auth::user()->id)
+                    <a href="/campaigns/{{ $campaign->id }}">{{ $campaign->name }}</a>
+                @endif
+            @endforeach
+        </div>
+
+
     @endforeach
 
     <div class="col-md-6 col-md-offset-3">

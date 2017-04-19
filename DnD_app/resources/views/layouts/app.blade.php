@@ -48,7 +48,7 @@
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
                 <li><a href="{{ url('/') }}">Home</a></li>
-                <li><a href="{{ url('/users/' . Auth::user()->id) }}">Characters</a></li>
+                {{--<li><a href="{{ url('/users/' . Auth::user()->id) }}">Characters</a></li>--}}
                 <li><a href="{{ url('/campaigns') }}">Campaigns</a></li>
                 <li><a href="{{ url('/sessions') }}">Sessions</a></li>
                 <li><a href="{{ url('/groups') }}">Groups</a></li>

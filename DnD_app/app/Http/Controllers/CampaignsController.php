@@ -42,6 +42,23 @@ class CampaignsController extends Controller
         return view('campaigns.create', compact('campaigns'));
     }
 
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+//        $campaign = new Campaign($request->all());
+
+        $campaign = new Campaign;
+
+        $campaign->create($request->all());
+
+        return redirect('campaigns');
+    }
+
     public function show($id)
     {
         $campaign = Campaign::findOrFail($id);
