@@ -22,7 +22,6 @@
                 @endif
             @endforeach
 
-
             @foreach (App\Campaign::all() as $campaign)
                 @if ($campaign->created_by == Auth::user()->id)
                 <div>
@@ -34,7 +33,6 @@
                 @endforeach
 
         </div>
-
 
     {{--@endforeach--}}
 

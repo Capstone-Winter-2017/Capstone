@@ -1,11 +1,20 @@
 @extends('layouts.app')
 
+<?php $sub = 'Group'; $model = 'groups' ?>
+
 @section('content')
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             {{--<div> {{ var_dump($group) }} </div>--}}
 
                     <h1>Group Details</h1>
+            <hr>
+
+            @include('layouts.deletebutton')
+            <hr>
+            <div>
+                <input type="button" class="btn btn-primary form-control" onclick="location.href='{{'/' . $model . '/' . $group->id . '/edit'}}'" value="Update" />
+            </div>
             <hr>
 
                     {{-- DISPLAY CHARACTER NAME --}}
@@ -29,19 +38,5 @@
                                 {{ $group->description }}
                         </div>
                     </div>
-
-            {{--<form method="delete" route="groups/17/destroy" class="delete-form">--}}
-
-                <form action="" method="post" onsubmit="return confirm('Are you sure you want to submit?')">
-                    {{ method_field('DELETE') }}
-
-                <input type="hidden" name="_token" value="{{ csrf_token() }}">
-
-                <button type="submit" class="btn btn-danger"><i class="fa fa-pencil"></i> Delete</button>
-            </form>
-
-                </div>
-            </div>
-        </div>
 
 @stop

@@ -53,6 +53,7 @@
                 <li><a href="{{ url('/campaigns') }}">Campaigns</a></li>
                 <li><a href="{{ url('/sessions') }}">Sessions</a></li>
                 <li><a href="{{ url('/groups') }}">Groups</a></li>
+                <li><a href="{{ url('/friends') }}">Friends</a></li>
                 <li><a href="{{ url('/users') }}">Users</a></li>
                 {{--<li><a href="{{ url() }}"></a></li>--}}
             </ul>

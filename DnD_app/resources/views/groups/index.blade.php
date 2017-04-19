@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-<?php $sub = 'Group' ?>
+<?php $sub = 'Group'; $model = 'groups' ?>
 
 @section('content')
     <div class="col-md-6 col-md-offset-3">
@@ -22,17 +22,6 @@
         @endforeach
     </div>
 
-    <div class="col-md-6 col-md-offset-3">
-        <hr>
-    </div>
+    @include('layouts.newbutton')
 
-    <div class="col-md-6 col-md-offset-3">
-        <form method="link" action="/groups/create">
-            {{--<input type="hidden" name="_token" value="{{ csrf_token() }}">--}}
-
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary form-control">Add Group </button>
-            </div>
-        </form>
-    </div>
 @stop

@@ -17,8 +17,9 @@ class DatabaseSeeder extends Seeder
         $this->call(CampaignSeeder::class);
         $this->call(SessionSeeder::class);
         $this->call(GroupSeeder::class);
-
-
+        $this->call(UserCampaignsSeeder::class);
+        $this->call(UserGroupsSeeder::class);
+        $this->call(UserSessionsSeeder::class);
     }
 
 }

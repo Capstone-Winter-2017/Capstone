@@ -37,6 +37,8 @@ Route::resource('usergroups', 'UserGroupsController');
 
 Route::resource('usersessions', 'UserSessionsController');
 
+Route::resource('friends', 'FriendsController');
+
 Route::get('/test', function () {
     return view ('test');
 });
